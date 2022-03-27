@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ep9_Button</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>  
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+<body>
+    <div class="container" style="margin-top: 20px;">
+        <p class="p-3 mb-2 bg-danger text-white"> -Button </p>
+
+        <!-- สีของปุ่ม -->
+        <button class="btn btn-primary">Primary น้ำเงิน</button>
+        <button class="btn btn-secondary">Secondary เทา</button>
+        <button class="btn btn-success">Success เขียว</button>
+        <button class="btn btn-danger">Danger แดง</button>
+        <button class="btn btn-warning">Warning เหลือ</button>
+        <button class="btn btn-info">Info ฟ้า</button>
+        <button class="btn btn-light">Light ขาว</button>
+        <button class="btn btn-dark">Dark ดำ</button>
+
+        <br><br>
+        <!-- ปุ่มแบบ Link -->
+        <button type="button" class="btn btn-link">ปุ่มแบบ Link ลิงค์</button>
+
+        <br><br>
+        <!-- Button Tag -->
+        <a href="#" class="btn btn-info">Link</a>
+        <button type="button" class="btn btn-success">Button0</button>
+        <input type="button" class="btn btn-danger" value="Button">
+        <input type="submit" class="btn btn-warning" value="Submit">
+        <input type="reset"  class="btn btn-secondary" value="Reset">   
+        <br><br>
+
+        <!-- Outline Button เส้นขอบตามสี -->
+        <button class="btn btn-outline-primary">Outline Primary</button>
+        <button class="btn btn-outline-secondary">Outline Secondary</button>
+        <button class="btn btn-outline-success">Outline Success</button>
+        <button class="btn btn-outline-danger">Outline Danger</button>
+        <button class="btn btn-outline-warning">Outline Warning</button>
+        <button class="btn btn-outline-info">Outline Info</button>
+        <button class="btn btn-outline-light">Outline Light</button>
+        <button class="btn btn-outline-dark">Outline Dark</button>
+        <br><br>
+
+        <!-- ขนาดของปุ่ม ใส่สี ตามด้วยขนาด-->
+        <button class="btn btn-success btn-lg">Large Button</button>
+        <button class="btn btn-success btn-sm">Small Button</button>
+        <br><br>
+
+        <!-- Block Button ให้ปุ่มเต็มพื้นที่หน้าบล็อก-> d-grid  เว้นบรรทัดลงมา-> gap-2 -->
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary">Block Button</button>
+            <button class="btn btn-success">Block Button</button>
+        </div>
+        <br><br>
+
+        <p> รวมทั้งสามปุ่มมาในแนวนอน </p>
+        <!-- Button Group รวมทั้งสามปุ่มมาในแนวนอน -->
+        <div class="btn-group">
+            <button class="btn btn-success">Button 1</button>
+            <button class="btn btn-success">Button 2</button>
+            <button class="btn btn-success">Button 3</button>
+        </div>
+        <br><br>
+        
+        <p> รวมทั้งสามปุ่มมาในแนวตั้ง </p>
+        <!-- Button Vertical Group รวมทั้งสามปุ่มมาในแนวตั้ง-->
+        <div class="btn-group-vertical">
+            <button class="btn btn-primary">Button 1</button>
+            <button class="btn btn-primary">Button 2</button>
+            <button class="btn btn-primary">Button 3</button>
+        </div>
+        <br><br>
+        
+        <p> ปุ่มไปหน้าHome Menu </p>
+        <!-- Dropdown Menu -->
+        <div class="btn-group">
+            <button class="btn btn-info">Home</button>
+            <!--<button class="btn btn-สีปุ่ม 
+                dropdown-toggleใส่ให้รู้ว่าเป็นปุ่มกดเมนู" 
+                data-bs-toggleทำให้เป็นปุ่มกดมีตัวเลือก="dropdown ชื่อclass"
+                >Menu ชื่อแสดงผลปุ่ม</button>
+                <script src="js/bootstrap.bundle.js"></script> อย่าลืมใส่ด้านบนด้วย -->
+            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Menu</button>
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">Item 1</a>
+                <a href="#" class="dropdown-item">Item 2</a>
+                <a href="#" class="dropdown-item">Item 3</a>
+            </div>
+        </div>
+        <br><br>
+
+        <!-- Button style สถานะของปุ่ม-->
+        <button class="btn btn-success">Regular ปุ่มปกติ</button>
+        <button class="btn btn-primary active">Active บ่งบอกว่าใช้งานอยู่</button>
+        <button class="btn btn-danger disabled">Disabled ไม่สามารถกดได้</button>
+        <br><br>
+    </div>
+</body>
+</html>

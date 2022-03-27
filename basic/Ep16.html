@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ep16_Pagination</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>  
+</head>
+<body>
+    <div class="container" style="margin-top: 20px;">
+        <p class="p-3 mb-2 bg-danger text-white"> -กำหนดหมายเลขหน้า </p>
+
+        <!-- การสร้างหมายเลขหน้า -->
+    <nav>
+        <ul class="pagination">
+            <li class="page-item">
+                <a href="#" class="page-link">ก่อนหน้า</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">ถัดไป</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Alignment วางหมายเลขหน้าไว้ตรงหน้า justify-content-start(ตำแหน่งต้องการ) -->
+    <nav>
+        <ul class="pagination justify-content-start">
+            <li class="page-item">
+                <a href="#" class="page-link">ก่อนหน้า</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">ถัดไป</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- ตรงกลาง -->
+    <nav>
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+                <a href="#" class="page-link">ก่อนหน้า</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">ถัดไป</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- ตรงหลัง -->
+    <nav>
+        <ul class="pagination justify-content-end">
+            <li class="page-item">
+                <a href="#" class="page-link">ก่อนหน้า</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">ถัดไป</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Active & Disabled บอกว่าอยู่หน้าไหน และปิดไม่ให้ไปต่อ-->
+    <nav>
+        <ul class="pagination justify-content-start">
+            <li class="page-item disabled">
+                <a href="#" class="page-link">ก่อนหน้า</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item active">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item ">
+                <a href="#" class="page-link">ถัดไป</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- กำหนดขนาด -->
+    <nav>
+        <ul class="pagination pagination-lg">
+            <li class="page-item disabled">
+                <a href="#" class="page-link">ก่อนหน้า</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item active">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">ถัดไป</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Pagination แบบ Arrow <span>&laquo;</span> คือการใสไอคอนลูกศรแทนข้แความ-->
+    <nav>
+        <ul class="pagination pagination-lg">
+            <li class="page-item">
+                <a href="#" class="page-link">
+                    <span>&laquo;</span>
+                </a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">
+                    <span>&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    </div>
+</body>
+</html>
